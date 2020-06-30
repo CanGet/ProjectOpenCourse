@@ -1,0 +1,91 @@
+const sum = function(array) {
+    // 先设置一个变量 s 用来存数组的和
+    var s = 0
+    var i = 0
+    while (i < array.length()) {
+        var n = array[i]
+        s = s + n
+        i = i + 1
+    }
+    return s
+}
+
+const product = function(array) {
+    var p = 1
+    var i = 0
+    while (i < array.length()) {
+        var n = array[i]
+        p = p * n
+        i = i + 1
+    }
+    return p
+}
+
+const abs = function(n) {
+    if(n < 0)
+    {
+        return -n
+    }
+    return n
+}
+
+const average = function(array) {
+    var s = sum(array)
+    var n = array.length()
+    var a = s / n
+    return a
+}
+
+const min = function(array) {
+    var s = array[0]
+    var i = 0
+    while (i < array.length()) {
+        if(s > array[i]){
+            s = array[i]
+        }
+        i = i + 1
+    }
+    return s
+}
+
+const sum1 = function(n) {
+    var s = 0
+    var i = 1
+    while(i < n + 1){
+        if(i % 2 == 0){
+            s = s - i
+        }else{
+            s = s + i
+        }
+        i = i + 1
+    }
+    return s
+}
+
+const sum2 = function(n) {
+    var s = 1
+    var i = 2
+    while(i < n + 1){
+        if(i % 2 == 0){
+            s = s + i
+        }else{
+            s = s - i
+        }
+        i = i + 1
+    }
+    return s
+}
+
+const fac = function(n) {
+    var s = 1
+    var i = 1
+    while(i < n + 1){
+        s = s * i
+        i = i + 1
+    }
+    return s
+}
+
+//var arr = [40,9,50,45]
+//var ls = min(arr)
+log(fac(5))
